@@ -1,82 +1,177 @@
 .hero {
-    background-color: var(--shape-background);
 
-    background-image: url(/assets/images/hero-background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center ;
+    background: 
+    radial-gradient(
+      circle at 5% 50%,          
+      rgb(63, 15, 65, 0.3) 0%,
+      rgba(0, 0, 0, 0) 50%  
+    ),
+    
+    radial-gradient(
+      circle at 90% 60%,
+      rgb(63, 15, 65, 0.25) 0%,
+      rgba(0, 0, 0, 0) 60%
+    ),
 
-    height: 60rem;
+     radial-gradient(
+      circle at 30% 85%,          
+      rgb(63, 15, 65, 0.15) 0%,
+      rgba(0, 0, 0, 0) 40%  
+    ),
+    
+    radial-gradient(
+      circle at 90% 70%,
+      rgb(63, 15, 65, 0.15) 0%,
+      rgba(0, 0, 0, 0) 70%
+    ),
 
-    & header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    var(--shape-background);
 
-        margin-inline: auto;
-        margin-top: 3.5rem;
-        max-width: 70rem;
-        position: relative;
+    & .hero-header {
+        background-image: url(/assets/images/hero-background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center ;
 
-        & img {
-            width: 4.4rem;
-        }
+        height: 60rem;
 
-        & div {
-            padding-block: .75rem;
-            overflow: hidden;
+        & header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-            border-radius: 8px;
-            
-            background-color: var(--pink-dark);
-            width:fit-content;
-            cursor: pointer;
-            transition: backgroud-color 2s ease;
-            
-            & a {
-                position: relative;
+            margin-inline: auto;
+            margin-top: 3.5rem;
+            max-width: 70rem;
+            position: relative;
+
+            & img {
+                width: 4.4rem;
+            }
+
+            & div {
+                padding-block: .75rem;
+                overflow: hidden;
+
                 border-radius: 8px;
-                padding: .85rem 1.25rem;
+            
+                background-color: var(--pink-dark);
+                width:fit-content;
+                cursor: pointer;
+                transition: backgroud-color 2s ease;
+            
+                & a {
+                    position: relative;
+                    border-radius: 8px;
+                    padding: .85rem 1.25rem;
 
-                font: var(--Button);
-                color: var(--text-title);
-                z-index: 0;
+                    font: var(--Button);
+                    color: var(--text-title);
+                    z-index: 0;
+                }
+            }
+
+            & a:after {
+                content: '';
+                position: absolute;
+                width:50px;
+                height: 50px;
+                left: 50%;
+                top: 50%;
+                border-radius: 50%;
+                background-color: var(--pink-base);
+
+                transform: translate(-50%, -50%) scale(0);
+                transform-origin:center;
+                transition: transform 400ms ease-out, width 400ms ease-out, height 400ms ease-out, opacity 400ms;
+                z-index: -1;
+                opacity: 0;
+            }
+
+            & a:hover::after {
+                transform: translate(-50%, -50%) scale(3);
+                opacity: 1;
+                transition: transform 600ms ease-out, width 600ms ease-out, height 600ms ease-out, opacity 500ms ;
             }
         }
+    
+        & .hero-title {
+            max-width: 41rem;
+            text-align: center;
+            margin-inline: auto;
+            margin-top: 10.25rem;
 
-        & a:after {
-            content: '';
-            position: absolute;
-            width:50px;
-            height: 50px;
-            left: 50%;
-            top: 50%;
-            border-radius: 50%;
-            background-color: var(--pink-base);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
 
-            transform: translate(-50%, -50%) scale(0);
-            transform-origin:center;
-            transition: transform 400ms ease-out, width 400ms ease-out, height 400ms ease-out;
-            z-index: -1;
+            & p {
+                font: var(--Body-lg);
+                color: var(--text-body);
+                max-width: 35.5rem;
+            }
         }
+    }
 
-        & a:hover::after {
-            transform: translate(-50%, -50%) scale(3);
-            transition: transform 600ms ease-out, width 600ms ease-out, height 600ms ease-out;
+    & .hero-animation {
+        max-width: 75rem;
+        margin-inline: auto;
+        margin-top: 6rem;
+        margin-bottom: 5rem;
+
+
+        & h5 {
+            text-align: center;
+            padding: 7.125rem 2rem 9.875rem;        
+            color: var(--text-body);
+
+            & strong {
+                color: var(--blue-light);
+            }
         }
-    }   
+    }
 }
 
 @media (width < 60em) {
     .hero {
-        height: 30rem;
+        & .hero-header {
+            height: 30rem;
 
-        & header {
-            margin-top: 1.25rem;
-            padding-inline: 1.25rem;
+            & header {
+                margin-top: 1.25rem;
+                padding-inline: 1.25rem;
 
-            & span {
-                display: none;
+                & span {
+                    display: none;
+                }
+            }
+
+            & .hero-title {
+                max-width: 20.937rem;
+                gap: 1rem;
+                margin-top: 3rem;
+
+                & p {
+                font: var(--Body-sm);
+                max-width: 20.937rem;
+                }
+            }
+        }
+
+        & .hero-animation {
+            max-width: 23.4375rem;
+            margin-top: 2rem;
+            margin-bottom: 0;
+
+            & h5 {
+                padding: 5.09375rem 1.5rem 5.09375rem 1.5rem;        
+                font: 500 1rem/140% var(--ff);
+
+                & strong {
+                    color: var(--text-body);
+                    font-weight: 500;
+                }
             }
         }
     }
