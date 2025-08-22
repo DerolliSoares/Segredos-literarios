@@ -91,6 +91,7 @@ span {
         color: var(--text-body);
         font-family: var(--ff-logo);
         font-size: 1.25rem;
+        width: fit-content;
     }
 
     &::after {
@@ -101,6 +102,7 @@ span {
         color: var(--text-body);
         font-family: var(--ff-logo);
         font-size: 1.25rem;
+        width: fit-content;
     }
 
 }
