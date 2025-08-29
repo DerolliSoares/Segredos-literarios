@@ -25,6 +25,7 @@
 
     --text-title:#F8FBFB;
     --text-body:#E2E7E9;
+    --text-body-opacity:rgb(226, 231, 233, 0.5);
     --text-label:#BAC6C9;
 
     --ff: "Raleway", sans-serif;
@@ -80,7 +81,7 @@ a {
     text-decoration:none;
 }
 
-span {
+.span {
     width: 4.4rem;
 
     &::before {

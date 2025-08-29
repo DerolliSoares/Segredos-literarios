@@ -32,8 +32,11 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center ;
+        opacity: 0;
 
         height: 60rem;
+
+        animation: opacity 4s forwards;
 
         & header {
             display: flex;
@@ -119,18 +122,119 @@
         margin-inline: auto;
         margin-top: 6rem;
         margin-bottom: 5rem;
+        overflow: hidden;
 
+        position: relative;
+
+        & .hotspot-1 {
+            position: absolute;
+            width: 4rem;
+            height: 4rem;
+            top: 2rem;
+            left: 34rem;
+
+            background-image: url(/assets/images/mystery-opened-spellbook.png);
+            background-size: cover;
+
+            transition: transform 400ms;
+            transform: rotate(20deg);
+            scale: 0;
+        }
+
+        & .hotspot-2 {
+            position: absolute;
+            width: 4rem;
+            height: 4rem;
+            top: 16rem;
+            left: 2.125rem;
+
+            background: url(/assets/images/mystery-opened-spellbook.png);
+            background-size: cover;
+
+            transition: transform 400ms;
+            transform: rotate(20deg); 
+            scale: 0;
+        } 
+
+        & .hotspot-3 {
+            position: absolute;
+            width: 4rem;
+            height: 4rem;
+            top: 16rem;
+            right: 2.125rem;
+
+            background: url(/assets/images/mystery-opened-spellbook.png);
+            background-size: cover;
+            
+            transition: transform 400ms;
+            transform: rotate(20deg);
+            scale: 0;
+        }
 
         & h5 {
             text-align: center;
             padding: 7.125rem 2rem 9.875rem;        
-            color: var(--text-body);
+            color: var(--text-body-opacity);
+            position: relative;
+            overflow: hidden;
+
+            transition: color 400ms;
 
             & strong {
                 color: var(--blue-light);
             }
         }
+
+        &:hover {
+
+            & .hotspot-1 {
+                animation: hotspot-enter 400ms forwards;
+                animation-delay: 0ms;
+
+                &:hover {
+                    transform: scale(1.1) rotate(30deg);
+                    transition: transform 400ms;
+                }
+            }
+
+            &:hover .hotspot-2 {
+                animation: hotspot-enter 400ms forwards;
+                animation-delay: 600ms;
+
+                &:hover {
+                    transform: scale(1.1) rotate(30deg);
+                    transition: transform 400ms;
+                }
+            }
+
+            &:hover .hotspot-3 {
+                animation: hotspot-enter 400ms forwards;
+                animation-delay: 1000ms;
+
+                &:hover {
+                    transform: scale(1.1) rotate(30deg);
+                    transition: transform 400ms;
+                }
+            }
+
+            & h5 {
+                color: var(--text-body);
+                transition: color 400ms;
+            }
+        }
     }
+}
+
+@keyframes opacity {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hotspot-enter {
+  to {
+    scale: 1;
+  }
 }
 
 @media (width < 60em) {
@@ -164,9 +268,37 @@
             margin-top: 2rem;
             margin-bottom: 0;
 
+            & .hotspot-1 {
+                width: 2rem;
+                height: 2rem;
+                top: 2.3rem;
+                left: 15rem;
+
+                scale: 1;
+            }
+
+            & .hotspot-2 {
+                width: 2rem;
+                height: 2rem;
+                top: 9.6rem;
+                left: 2rem;
+
+                scale: 1;
+            } 
+
+            & .hotspot-3 {
+                width: 2rem;
+                height: 2rem;
+                top: 10.6rem;
+                left: 19rem;
+
+                scale: 1;
+            }
+
             & h5 {
                 padding: 5.09375rem 1.5rem 5.09375rem 1.5rem;        
                 font: 500 1rem/140% var(--ff);
+                color: var(--text-body);
 
                 & strong {
                     color: var(--text-body);
