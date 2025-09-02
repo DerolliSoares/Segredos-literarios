@@ -54,6 +54,26 @@
     --Tag: 700 .625rem var(--ff);
 }
 
+body {
+    background-color: var(--shape-background);
+
+     background: 
+    radial-gradient(
+      circle at 5% 50%,          
+      rgb(63, 15, 65, 0.3) 0%,
+      rgba(0, 0, 0, 0) 50%  
+    ),
+    
+    radial-gradient(
+      circle at 90% 60%,
+      rgb(63, 15, 65, 0.25) 0%,
+      rgba(0, 0, 0, 0) 60%
+    ),
+    
+    var(--shape-background);
+    ;
+}
+
 h1 { 
     font: var(--Title-lg);
     color: var(--text-title);

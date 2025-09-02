@@ -1,0 +1,383 @@
+.kit {
+
+    & .kit-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        margin-top: 14.6875rem;
+
+        & h3 {
+            width: fit-content;
+        }
+
+        & img {
+            width: 2rem;
+        }
+    }
+
+    & p {
+        color: var(--text-body);
+        font: var(--Body-md);
+
+        width: fit-content;
+        margin-inline: auto;
+        margin-top: 5px;
+        margin-bottom: 5.5rem;
+    }
+
+    & .book-kit {
+        margin-top: 4.4rem;
+        margin-bottom: 19.5rem;
+        margin-inline: auto;
+        
+        width: 54.79rem;
+        position: relative;
+        overflow: visible;
+        
+        & img {
+            margin-top: 4rem;
+            margin-bottom: 8.375rem;
+            margin-left: 12rem;
+
+            width: 29rem;
+            height: 38.5rem;
+        }
+
+        & strong {
+            color: var(--text-title);
+            font: var(--Body-md);
+
+            width: fit-content;
+        }
+
+        & .capa-dura {
+
+            & strong {
+                position: absolute;
+                z-index: -1;
+                top: 0.5rem;
+                left: -1rem;
+
+                transform: translateX(17rem) translateY(9rem);
+                transition: transform 300ms ease-in-out;
+            }
+
+            & .arrow-1 {
+                background-image: url(/assets/arrow/arrow-1.svg);
+                position: absolute;
+                z-index: -1;
+
+                width: 10.8rem;
+                height: 2rem;
+
+                top: 3rem;
+                left: 3.6rem;
+
+                transform: translateX(12rem) translateY(9rem) scale(0.5);
+                transition: transform 300ms ease-in-out;
+            }
+        }
+
+        & .broche {
+            & strong {
+                position: absolute;
+                z-index: -1;
+
+                bottom: 27rem;
+                left: 0;
+
+                transform: translateX(16rem) translateY(-3rem);
+                transition: transform 300ms ease-in-out ;
+            }
+
+            & .arrow-2 {
+                background-image: url(/assets/arrow/arrow-2.svg);
+                background-repeat: no-repeat;
+                position: absolute;
+                z-index: -1;
+
+                width: 6.8rem;
+                height: 8rem;
+
+                bottom: 18rem;
+                left: 1.3rem;
+
+                transform: translateX(15rem) translateY(-7rem) scale(0.5);
+                transition: transform 300ms ease-in-out ;
+            }
+
+            & .broche-img {
+                background-image: url(/assets/images/pin.png);
+                background-size: contain;
+                position: absolute;
+                z-index: -1;
+
+                width: 13.9rem;
+                height: 15.9rem;
+                rotate: -8deg;
+
+                bottom: 5rem;
+                left: 4rem;
+
+                transform: translateX(15rem) translateY(-7rem) scale(0.8);
+                transition: transform 300ms ease-in-out ;
+            }
+        }
+
+        & .marca-pagina {
+            & strong {
+                position: absolute;
+                z-index: -1;
+
+                bottom: 0;
+                right: 6.5rem;
+
+                transform: translateX(-9rem) translateY(-15rem);
+                transition: transform 300ms ease-in-out ;
+            }
+
+            & .arrow-3 {
+                position: absolute;
+                background-image: url(/assets/arrow/arrow-3.svg);
+                background-repeat: no-repeat;
+                z-index: -1;
+
+                bottom: 2.5rem;
+                right: 3rem;
+
+                width: 9.8rem;
+                height: 10rem;
+
+                transform: translateX(-10rem) translateY(-15rem) scale(0.5);
+                transition: transform 300ms ease-in-out ;
+            }
+
+            & .marca-pagina-img {
+                position: absolute;
+                background-image: url(/assets/images/bookmark-purple.png);
+                background-size: cover;
+                z-index: -1;
+
+                bottom: 17rem;
+                right: 7.5rem;
+
+                width: 172px;
+                height: 536px;
+
+                transform: translateX(-7rem) translateY(4rem);
+                transition: transform 300ms ease-in-out ;
+            }
+
+            & .marca-pagina-img-2 {
+                position: absolute;
+                background-image: url(/assets/images/bookmark-yellow.png);
+                background-size: cover;
+                z-index: -2;
+
+                bottom: 11rem;
+                right: 0rem;
+
+                width: 172px;
+                height: 536px;
+
+                transform: translateX(-14.5rem) translateY(-1rem);
+                transition: transform 300ms ease-in-out ;
+            }
+        }
+        
+        &:hover {
+
+            & .capa-dura {
+                
+                & strong {
+                    transform: translateX(0) translateY(0);
+                    transition: transform 300ms ease-in-out ;
+                }
+
+                & .arrow-1 {
+                    transform: translateX(0) translateY(0) scale(1);
+                    transition:  transform 300ms ease-in-out;
+                }
+            }
+
+            & .broche {
+                & strong {
+                    transform: translateX(0) translateY(0);
+                    transition: transform 300ms ease-in-out ;
+                }
+
+                & .arrow-2 {
+                    transform: translateX(0) translateY(0) scale(1);
+                    transition: transform 300ms ease-in-out ;
+                }
+
+                & .broche-img {
+                    transform: translateX(0) translateY(0) scale(1);
+                    transition: transform 300ms ease-in-out ;
+                }
+            }
+
+            & .marca-pagina {
+                & strong {
+                    transform: translateX(0) translateY(0);
+                    transition: transform 300ms ease-in-out ;
+                }
+
+                & .arrow-3 {
+                    transform: translateX(0) translateY(0);
+                    transition: transform 300ms ease-in-out ;
+                }
+
+                & .marca-pagina-img {
+                    transform: translateX(0) translateY(0) rotate(15deg);
+                    transition: transform 300ms ease-in-out ;
+                }
+
+                & .marca-pagina-img-2 {
+                    transform: translateX(0) translateY(0) rotate(22deg);
+                    transition: transform 300ms ease-in-out ;
+                }
+            }
+        }
+    }
+}
+
+@media (width < 60em) {
+    .kit {
+        & .kit-title {
+            gap: .75rem;
+
+            margin-top: 6.5rem;
+
+            & h3 {
+                font-size: 1.5rem;
+            }
+
+            & img {
+                width: 1.25rem;
+            }
+        }
+
+        & p {
+            font: var(--Body-sm);
+            margin-top: .5rem;
+            margin-bottom: 4rem;
+        }
+
+        & .book-kit {
+            margin-top: 0;
+            margin-bottom: 5.5rem;
+        
+            max-width: 23.4375rem;
+            max-height: 19.9375rem;
+
+            & img {
+                margin-top: 3.3rem;
+                margin-bottom: 3.5rem;
+                margin-left: 5.5rem;
+
+                width: 9.8rem;
+                height: 13rem;
+            }
+
+            & strong {
+                font-size: 0.625rem;
+            }
+
+            & .capa-dura {
+
+                & strong {
+                    top: 1.5rem;
+                    left: 0.8rem;
+
+                    transform: translateX(6rem) translateY(4rem);
+                }
+
+                & .arrow-1 {
+                    width: 58px;
+                    height: 10px;
+                    background-size: cover;
+
+                    top: 2.8rem;
+                    left: 2.7rem;
+
+                    transform: translateX(4rem) translateY(3rem) scale(0.5);
+                }
+            }
+
+            & .broche {
+                & strong {
+                    bottom: 9.5rem;
+                    left: 0.6875rem;
+
+                    transform: translateX(6rem) translateY(-0.5rem);
+                }
+
+                & .arrow-2 {
+                    background-size: cover;
+                    width: 2.2rem;
+                    height: 2.65rem;
+
+                    bottom: 6.2rem;
+                    left: 1.6rem;
+
+                    transform: translateX(5rem) translateY(-1rem) scale(0.5);
+                }
+
+                & .broche-img {
+                    width: 4.7rem;
+                    height: 5.4rem;
+                    rotate: -8deg;
+
+                    bottom: 1.8rem;
+                    left: 2.6rem;
+
+                    transform: translateX(4rem) translateY(-1rem) scale(0.8);
+                }
+            }
+
+            & .marca-pagina {
+                & strong {
+                    bottom: .5rem;
+                    right: 4rem;
+
+                    transform: translateX(-5rem) translateY(-5rem);
+                }
+
+                & .arrow-3 {
+                    background-size: cover;
+                    bottom: 1.5rem;
+                    right: 4.2rem;
+
+                    width: 3.2rem;
+                    height: 3.2rem;
+
+                    transform: translateX(-4rem) translateY(-3rem) scale(0.5);
+                }
+
+                & .marca-pagina-img {
+                    bottom: 6.5rem;
+                    right: 5.7rem;
+
+                    width: 3.6rem;
+                    height: 11.3rem;
+
+                    transform: translateX(-2.6rem) translateY(1.7rem);
+                }
+
+                & .marca-pagina-img-2 {
+                    bottom: 4.2rem;
+                    right: 3.2rem;
+
+                    width: 3.6rem;
+                    height: 11.3rem;
+
+                    transform: translateX(-5.1rem) translateY(-0.5rem);
+                }
+            }  
+        }         
+    }
+}
+
