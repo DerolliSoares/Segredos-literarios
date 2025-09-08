@@ -13,7 +13,8 @@
     --pink-low:rgb(63, 15, 65);
 
     --blue-light:#73B6D2;
-    --blue-base:#358BB9;
+    --blue-base:#358bb9;
+    --blue-base-blur:rgb(53, 139, 185, 0.1);
     --blue-mid:#2374A4;
     --blue-dark:#144A72;
     --blue-low:#08233C;
@@ -99,6 +100,10 @@ h5 {
 
 a {
     text-decoration:none;
+}
+
+ul[role="list"] {
+    list-style: none;
 }
 
 .span {

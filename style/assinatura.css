@@ -1,0 +1,380 @@
+.assinatura {
+    background-image: url(/assets/images/pricing-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 77rem;
+
+    & .assinatura-title {
+        margin-inline: auto;
+        margin-bottom: 3.5rem;
+        margin-top: 12rem;
+
+        width: fit-content;
+        text-align: center;
+    }
+
+    & .cards {
+        max-width: 65.625rem;
+        height: 37.875rem;
+
+        margin-inline: auto;
+        position: relative;
+
+        & .card {
+            background-color: var(--shape-base);
+            width: 18rem;
+            height: 26rem;
+            overflow: visible;
+
+            padding: 2rem 2rem 1.75rem;
+            border-radius: 1.5rem;
+
+            border: 1px var(--shape-stroke) solid;
+            position: relative;
+
+            transition: transform 300ms ease-in-out, z-index 300ms ease-in-out, background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+
+            &:hover {
+                box-shadow: 0px 0px 66px var(--blue-base-blur);
+                transform: translateY(-0.5rem);
+                z-index: 2;
+                background-color: var(--shape-hover);
+                transition: transform 300ms ease-in-out, z-index 300ms ease-in-out, background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+            }
+
+            & .card-bottom {
+                position: absolute;
+                width: 14rem;
+                bottom: 28px;
+            }
+            
+            & h4 {
+                color: var(--blue-light);
+            }
+    
+            & .price {
+                display: flex;
+                margin-top: 1.5rem;
+                margin-bottom: .5rem;
+                
+                & h2 {
+                    width: fit-content;
+                }
+                
+                & h4 {
+                    color: var(--text-title);
+                    width: fit-content;
+                    display: flex;
+                    align-self: self-end;
+                }
+            }
+    
+            & p {
+                font: var(--Body-sm);
+                color: var(--text-label);
+            }
+    
+            & img {
+                width: 0.875rem;
+                height: 0.875rem;
+            }
+    
+            & ul {
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+    
+                margin-bottom: 1.5rem;
+                
+                & li {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.375rem;
+    
+                    color: var(--text-body);
+                    font: var(--Body-xs);
+                }
+            }
+    
+            & .subscription-button {
+                padding-block: .75rem;
+                overflow: hidden;
+                margin-inline: auto;
+
+                border-radius: 8px;
+            
+                background-color: var(--blue-dark);
+                width:fit-content;
+                cursor: pointer;
+                transition: backgroud-color 1.5s ease;
+            
+                & a {
+                    position: relative;
+                    border-radius: 8px;
+                    padding: .85rem 3.1rem;
+
+                    font: var(--Button);
+                    color: var(--text-title);
+                    z-index: 0;
+                }
+            }
+
+            & a:after {
+                content: '';
+                position: absolute;
+                width:50px;
+                height: 50px;
+                left: 50%;
+                top: 50%;
+                border-radius: 100%;
+                background-color: var(--blue-mid);
+
+                transform: translate(-50%, -50%) scale(0);
+                transform-origin:center;
+                transition: transform 400ms ease-out, width 400ms ease-out, height 400ms ease-out, opacity 400ms;
+                z-index: -1;
+                opacity: 0;
+            }
+
+            & a:hover::after {
+                transform: translate(-50%, -50%) scale(5);
+                opacity: 1;
+                transition: transform 400ms ease-out, width 400ms ease-out, height 400ms ease-out, opacity 400ms ;
+            }
+        }     
+
+        & .first-card {
+            position: absolute;
+            top: 8.6775rem;
+            left: 5.721875rem;
+            
+            rotate: -8deg;
+
+            &:hover {
+                &::after {
+                    transform: rotate(-19deg);
+                    transition: transform 300ms ease-in-out;
+                }
+
+                &::before {
+                    transform: rotate(8deg);
+                    transition: transform 300ms ease-in-out;
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                background-image: url(/assets/ícons/star.svg);
+                background-size: 100%;
+
+                width: 1.625rem;
+                height: 1.625rem;
+
+                left: -1.6rem;
+                top: -1.6rem;
+
+                transition: transform 250ms ease-in-out;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-image: url(/assets/ícons/star.svg);
+                background-size: 100%;
+
+                width: .8125rem;
+                height: .8125rem;
+
+                left: -2rem;
+                top: .7rem;
+
+                transition: transform 250ms ease-in-out;
+            }
+
+            & .subscription-button {
+                & a {
+                    padding-inline: 3.7rem;
+                }
+            }
+        }
+        
+        & .second-card {
+            position: absolute;
+            top: 5.125rem;
+            left: 23.82625rem;
+
+            z-index: 1;
+
+            background-color: var(--shape-base);
+            border: 1px solid var(--shape-stroke);
+
+            &::after {
+                content: '';
+                position: absolute;
+                background-image: url(/assets/ícons/bunny.svg);
+                background-size: cover;
+
+                width: 45.05px;
+                height: 49.93px;
+
+                top: -49.93px;
+                left: 2rem;
+            }
+
+            &::before {
+                content: 'POPULAR';
+                position: absolute;
+                background-color: var(--shape-stroke);
+                font: var(--Tag);
+                color: var(--text-body);
+
+                width: fit-content;
+                padding: 0.5625rem 1.25rem;
+                border-radius: 999px;
+
+                top: 1.5rem;
+                right: 1.5rem;
+            }
+
+            & .subscription-button {
+                background-color: var(--pink-dark);
+
+                & a:after {
+                    background-color: var(--pink-base);
+                }
+            }
+        }
+
+        & .third-card {
+            position: absolute;
+            top: 8.1825rem;
+            right: 5.73rem;
+
+            rotate: 8deg;
+
+            &:hover {
+                &::after {
+                    transform: rotate(21deg);
+                    transition: transform 300ms ease-in-out;
+                }
+
+                &::before {
+                    transform: rotate(-19deg);
+                    transition: transform 300ms ease-in-out;
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                background-image: url(/assets/ícons/star.svg);
+                background-size: 100%;
+
+                width: 1.45125rem;
+                height: 1.45125rem;
+
+                right: -2.7rem;
+                bottom: -0.8rem;
+
+                transition: transform 250ms ease-in-out;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-image: url(/assets/ícons/star.svg);
+                background-size: 100%;
+
+                width: .7rem;
+                height: .7rem;
+
+                right: 0rem;
+                bottom: -1.5rem;
+
+                transition: transform 250ms ease-in-out;
+            }
+
+            & .subscription-button {
+                & a {
+                    padding-inline: 4rem;
+                }
+            }
+        }
+    }
+}
+
+@media (width < 60em) {
+    .assinatura {
+        height: 44.5rem;
+
+        & .assinatura-title {
+            margin-bottom: 3rem;
+            margin-top: 6.5rem;
+
+            & h3 {
+                font-size: 1.5rem;
+                color: var(--text-body);
+            }
+        }
+
+        & .cards {
+            max-width: 100%;
+            height: 26rem; 
+            overflow-y: hidden;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+
+            display: flex;
+            gap: 1rem;
+
+            & .card {
+                rotate: 0deg;
+                flex-shrink: 0;
+
+                &:hover {
+                    box-shadow: none;
+                    transform: translateY(0);
+                    z-index: 1;
+                    background-color: var(--shape-base);
+                }
+            }
+
+            & .first-card {
+                position: initial;
+                margin-left:3.25rem;
+
+                &::after {
+                    display: none;
+                }
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            & .second-card {
+                position: initial;
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            & .third-card {
+                position: initial;
+                margin-right:3.25rem;
+
+                &::after {
+                    display: none;
+                }
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
