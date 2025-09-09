@@ -1,7 +1,7 @@
 .hero {
 
     & .hero-header {
-        background-image: url(/assets/images/hero-background.png);
+        background-image: url(../assets/images/hero-background.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center bottom;
