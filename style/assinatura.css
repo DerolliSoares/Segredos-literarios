@@ -1,5 +1,5 @@
 .assinatura {
-    background-image: url(/assets/images/pricing-background.png);
+    background-image: url(../assets/images/pricing-background.png);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -166,7 +166,7 @@
             &::after {
                 content: '';
                 position: absolute;
-                background-image: url(/assets/ícons/star.svg);
+                background-image: url(../assets/ícons/star.svg);
                 background-size: 100%;
 
                 width: 1.625rem;
@@ -181,7 +181,7 @@
             &::before {
                 content: '';
                 position: absolute;
-                background-image: url(/assets/ícons/star.svg);
+                background-image: url(../assets/ícons/star.svg);
                 background-size: 100%;
 
                 width: .8125rem;
@@ -213,7 +213,7 @@
             &::after {
                 content: '';
                 position: absolute;
-                background-image: url(/assets/ícons/bunny.svg);
+                background-image: url(../assets/ícons/bunny.svg);
                 background-size: cover;
 
                 width: 45.05px;
@@ -269,7 +269,7 @@
             &::after {
                 content: '';
                 position: absolute;
-                background-image: url(/assets/ícons/star.svg);
+                background-image: url(../assets/ícons/star.svg);
                 background-size: 100%;
 
                 width: 1.45125rem;
@@ -284,7 +284,7 @@
             &::before {
                 content: '';
                 position: absolute;
-                background-image: url(/assets/ícons/star.svg);
+                background-image: url(../assets/ícons/star.svg);
                 background-size: 100%;
 
                 width: .7rem;

@@ -106,7 +106,7 @@
             top: 2rem;
             left: 34rem;
 
-            background-image: url(/assets/images/mystery-opened-spellbook.png);
+            background-image: url(../assets/images/mystery-opened-spellbook.png);
             background-size: cover;
 
             transition: transform 400ms;
@@ -121,7 +121,7 @@
             top: 16rem;
             left: 2.125rem;
 
-            background: url(/assets/images/mystery-opened-spellbook.png);
+            background: url(../assets/images/mystery-opened-spellbook.png);
             background-size: cover;
 
             transition: transform 400ms;
@@ -136,7 +136,7 @@
             top: 16rem;
             right: 2.125rem;
 
-            background: url(/assets/images/mystery-opened-spellbook.png);
+            background: url(../assets/images/mystery-opened-spellbook.png);
             background-size: cover;
             
             transition: transform 400ms;

@@ -65,7 +65,7 @@
             }
 
             & .arrow-1 {
-                background-image: url(/assets/arrow/arrow-1.svg);
+                background-image: url(../assets/arrow/arrow-1.svg);
                 position: absolute;
                 z-index: -1;
 
@@ -93,7 +93,7 @@
             }
 
             & .arrow-2 {
-                background-image: url(/assets/arrow/arrow-2.svg);
+                background-image: url(../assets/arrow/arrow-2.svg);
                 background-repeat: no-repeat;
                 position: absolute;
                 z-index: -1;
@@ -109,7 +109,7 @@
             }
 
             & .broche-img {
-                background-image: url(/assets/images/pin.png);
+                background-image: url(../assets/images/pin.png);
                 background-size: contain;
                 position: absolute;
                 z-index: -1;
@@ -140,7 +140,7 @@
 
             & .arrow-3 {
                 position: absolute;
-                background-image: url(/assets/arrow/arrow-3.svg);
+                background-image: url(../assets/arrow/arrow-3.svg);
                 background-repeat: no-repeat;
                 z-index: -1;
 
@@ -156,7 +156,7 @@
 
             & .marca-pagina-img {
                 position: absolute;
-                background-image: url(/assets/images/bookmark-purple.png);
+                background-image: url(../assets/images/bookmark-purple.png);
                 background-size: cover;
                 z-index: -1;
 
@@ -172,7 +172,7 @@
 
             & .marca-pagina-img-2 {
                 position: absolute;
-                background-image: url(/assets/images/bookmark-yellow.png);
+                background-image: url(../assets/images/bookmark-yellow.png);
                 background-size: cover;
                 z-index: -2;
 
