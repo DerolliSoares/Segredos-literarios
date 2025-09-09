@@ -2,7 +2,7 @@ footer {
     background-image: url(/assets/images/book-trace-background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
 
     height: 25.9375rem;
 
@@ -135,7 +135,6 @@ footer {
             width: 19.4375rem;
             margin-inline: auto;
             margin-top: 6.125rem;
-            border: 2px red solid;
 
             & .divider {
                 width: 19.4375rem;
@@ -144,10 +143,6 @@ footer {
             & .social {
                 gap: 0.8875rem;
             }
-        }
-
-        & .links {
-            border: 2px red solid;
         }
     }
 }

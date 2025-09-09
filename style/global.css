@@ -13,7 +13,7 @@
     --pink-low:rgb(63, 15, 65);
 
     --blue-light:#73B6D2;
-    --blue-base:#358bb9;
+    --blue-base:rgb(53, 139, 185);
     --blue-base-blur:rgb(53, 139, 185, 0.1);
     --blue-mid:#2374A4;
     --blue-dark:#144A72;
@@ -58,17 +58,35 @@
 body {
     background-color: var(--shape-background);
 
-     background: 
+    background: 
     radial-gradient(
-      circle at 5% 50%,          
+      circle at 100% 18%,          
       rgb(63, 15, 65, 0.3) 0%,
-      rgba(0, 0, 0, 0) 50%  
+      rgba(0, 0, 0, 0) 30%  
     ),
     
     radial-gradient(
-      circle at 90% 60%,
-      rgb(63, 15, 65, 0.25) 0%,
-      rgba(0, 0, 0, 0) 60%
+      circle at -5% 15%,
+      rgb(63, 15, 65, 0.3) 0%,
+      rgba(0, 0, 0, 0) 20%
+    ),
+
+    radial-gradient(
+      circle at 35% 28%,
+      rgb(63, 15, 65, 0.2) 0%,
+      rgba(0, 0, 0, 0) 30%
+    ),
+
+    radial-gradient(
+      circle at 55% 50%,
+      rgb(63, 15, 65, 0.5) 0%,
+      rgba(0, 0, 0, 0) 25%
+    ),
+
+    radial-gradient(
+      circle at 50% 78%,
+      rgb(53, 139, 185, 0.1) 0%,
+      rgba(0, 0, 0, 0) 30%
     ),
     
     var(--shape-background);
@@ -142,6 +160,26 @@ ul[role="list"] {
     :root {
         --Title-lg: 700 1.75rem var(--ff);
     }
+
+    body {
+    background-color: var(--shape-background);
+
+    background: 
+    radial-gradient(
+      circle at 35% 28%,
+      rgb(63, 15, 65, 0.3) 0%,
+      rgba(0, 0, 0, 0) 30%
+    ),
+
+    radial-gradient(
+      circle at 55% 46%,
+      rgb(63, 15, 65, 0.5) 0%,
+      rgba(0, 0, 0, 0) 20%
+    ),
+    
+    var(--shape-background);
+    ;
+}
     
     span {
         &::before {
